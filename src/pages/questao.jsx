@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export default () => {
+export default function Questao() {
     const [questao, setQuestao] = useState(null)
 
     useEffect(() => {

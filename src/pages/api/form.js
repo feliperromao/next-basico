@@ -1,6 +1,6 @@
 const usersList = []
 
-export default (req, res) => {
+function form (req, res) {
     if (req.method === 'GET') {
         return get(req, res)
     }
@@ -26,3 +26,5 @@ function post(req, res) {
         user: { name: data.name, age: data.age }
     })
 }
+
+export default form
